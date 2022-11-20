@@ -1,0 +1,53 @@
+{
+  "name": "express-api-starter",
+  "version": "1.2.0",
+  "description": " A basic starter for an express.js API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "author": "Babandeep Singh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babandeepsingh/Express-Starter-Kit.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "2captcha": "^3.0.5",
+    "acorn-loose": "^8.3.0",
+    "acorn-walk": "^8.2.0",
+    "atob": "^2.1.2",
+    "axios": "^0.27.2",
+    "base-64": "^1.0.0",
+    "body-parser": "^1.20.0",
+    "btoa": "^1.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "devergroup-request": "^1.1.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.8",
+    "escodegen": "^2.0.0",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "helmet": "^4.4.1",
+    "htmlparser2": "^8.0.1",
+    "http-proxy-middleware": "^2.0.6",
+    "javascript-obfuscator": "^4.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "puppeteer": "^18.2.1",
+    "puppeteer-extra": "^3.3.4",
+    "resolve": "^1.22.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Auto Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="h-100">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+        <h4 class="alert alert-danger">Please wait while we're establishing a session with spamzilla servers. The operation may take up to 5 minutes; please be patient. Don't close this tab.</h4>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: "/do-auto-login",
+                method: "GET",
+                dataType: "json",
+                processData: false,
+                contentType: false,
+                timeout: 100000
+            }).done(function(data, textStatus, jqXHR) {
+                window.location.replace("/");
+            })
+        });
+    </script>
+</body>
+</html>
